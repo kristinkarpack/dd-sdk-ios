@@ -7,7 +7,6 @@
 #if canImport(SwiftUI)
 import SwiftUI
 
-// TODO: RUMM-2035 Enable SwiftUI tap action on tvOS
 #if !os(tvOS)
 
 /// `SwiftUI.ViewModifier` for RUM which invoke `addUserAction` from the
@@ -52,5 +51,4 @@ public extension SwiftUI.View {
 }
 
 #endif
-
 #endif
