@@ -123,6 +123,7 @@ bump:
 		sed "s/__DATADOG_VERSION__/$$version/g" DatadogSDK.podspec.src > DatadogSDK.podspec; \
 		sed "s/__DATADOG_VERSION__/$$version/g" DatadogSDKObjc.podspec.src > DatadogSDKObjc.podspec; \
 		sed "s/__DATADOG_VERSION__/$$version/g" DatadogSDKAlamofireExtension.podspec.src > DatadogSDKAlamofireExtension.podspec; \
+		sed "s/__DATADOG_VERSION__/$$version/g" DatadogSDKApolloExtension.podspec.src > DatadogSDKApolloExtension.podspec; \
 		sed "s/__DATADOG_VERSION__/$$version/g" DatadogSDKCrashReporting.podspec.src > DatadogSDKCrashReporting.podspec; \
 		git add . ; \
 		git commit -m "Bumped version to $$version"; \
